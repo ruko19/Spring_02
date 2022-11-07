@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring_02</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="texto__container">
+            <h1 class="title__page">Aprende a programar observando a los demas</h1>
+            <p class="paragraph__page">Vea como los desarroladores experimentados resuelven problemas en tiempo real.
+                Ver tutoriales con scrips es Genial, pero entender com piensan los desarroladores es invaluable.</p>
+        </div>
+
+        <div class="form__container">
+
+            <p class="prueba-gratis">
+                <span>Pruebalo gratis 7 dias</span> y luego $ 20 /mes a partir de entonces
+            </p>
+
+
+            <form class="form__contacto" id="formulario">
+                <!-- grupo: Nombre -->
+                <div class="form-group">
+                    <input type="text" name="nombre" id="nombre" class="form__imputs" placeholder="Nombre">
+
+                    <img src="./img/icon-error.svg" class="error-icon" alt="">
+
+                    <p class="mensaje-error">El nombre no puede estar vacio</p>
+                </div>
+
+                <!-- grupo: Apellido -->
+                <div class="form-group">
+                    <input type="text" name="apellido" id="apellido" class="form__imputs" placeholder="Apellido">
+
+                    <img src="./img/icon-error.svg" class="error-icon" alt="">
+
+                    <p class="mensaje-error">El apellido no puede estar vacio</p>
+                </div>
+
+                <!-- grupo: Email -->
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form__imputs" placeholder="Email">
+
+                    <img src="./img/icon-error.svg" class="error-icon" alt="">
+
+                    <p class="mensaje-error">
+                        El imail no puede estar vacio.</p>
+                        
+                </div>
+
+                <!-- grupo: Contraseña -->
+                <div class="form-group">
+                    <input type="password" name="password" id="password" class="form__imputs" placeholder="Contraseña">
+
+                    <img src="./img/icon-error.svg" class="error-icon" alt="">
+
+                    <p class="mensaje-error">
+                        Contraseña no puede estar vacio
+                    <p>
+                </div>
+                <button type="submit" id="btn__submit" class="btn__submit">RECLAMA TU PRUEVA GRATUITA</button>
+                <P class="condiciones">Al hacer click en el boton usted acepta nuestros
+                    <a href="#">Terminos y Servicios.</a>
+                </P>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

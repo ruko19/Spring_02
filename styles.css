@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red :hsl(0, 100%, 74%);
+    --gree: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+
+body{
+    background-color: var(--red);
+    background-image: url(./img/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 6rem 2rem 3rem 2rem;
+ 
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.texto__container{
+    text-align: center;
+    max-width: 38rem;
+}
+
+.title__page{
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+ 
+    
+}
+
+.paragraph__page{
+    text-align: center;
+    font-size: 15px;
+}
+
+.form__container{
+    width: 100%;
+    max-width: 93%;
+}
+
+.prueba-gratis{
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    padding: 17px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    font-weight: 400;
+}   
+
+.prueba-gratis span{
+    font-weight: 700;
+
+}
+
+.form__contacto{
+    width: 100%;
+    margin-top: 25px;
+    background-color: #fff;
+   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}   
+
+.form-group{
+    width: 100%;
+  position: relative;
+}
+
+.form__imputs{
+    display: block;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid #dedede;
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+    
+    
+}
+
+.form__imputs::placeholder{
+    font-size: 0.975rem;
+    font-weight: 700;
+}
+
+.form__imputs:focus{
+    font-size: 0.850rem;
+    outline: none;
+   
+ 
+
+}
+
+
+
+.form__imputs.error{
+    border: 2px solid var(--red);
+}
+
+.error-icon{
+    display: none;
+     position: absolute;
+     top: 0.9375rem;
+     right: 1rem;   
+}
+
+.mensaje-error{
+    color: var(--red);
+     text-align: right;
+    margin-top: 10px;
+    font-style: italic; 
+    font-size: .8rem;
+    display: none; 
+
+
+}
+
+.visible {
+    display: block;
+}
+
+.btn__submit{
+    background-color: var(--gree);
+    color: #fff;
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.condiciones{
+    color: var(--grayish-blue);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.condiciones a{
+    color: var(--red);
+    text-decoration: none;
+}
+
+
+/* Diseño responsive */
+
+@media (min-width :380px){
+ 
+   
+
+    .texto__container{
+        text-align: center;
+    
+    }
+    .title__page{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .paragraph__page{
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+
+@media (min-width : 590px){
+    
+    .texto__container{
+        text-align: center;
+        
+    }
+    .title__page{
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .paragraph__page{
+        text-align: center;
+        font-size: 19.5px;
+    }
+    
+    
+    
+}
+
+@media (min-width :1000px ){
+
+    body{
+        
+        justify-content: center;
+        background-image: url(./img/bg-intro-desktop.png);
+    } 
+    
+    main {
+        flex-direction: row;
+    }
+    
+  
+
+     .title__page{
+        text-align: left;
+        font-size: 50px;
+    } 
+    
+     .paragraph__page{
+        text-align: left;
+        font-size: 19.5px;
+    } 
+    
+    
+}
+ 
+
+
+
+
+
+
+
